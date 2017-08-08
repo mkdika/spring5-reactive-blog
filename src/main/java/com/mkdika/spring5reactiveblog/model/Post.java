@@ -11,7 +11,7 @@ import java.util.List;
 public class Post {
 
     @Id
-    private String id;
+    private Integer id;
     private String title;
     private String body;
     private Date posttime;
