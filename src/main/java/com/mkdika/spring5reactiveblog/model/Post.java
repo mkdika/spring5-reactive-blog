@@ -17,4 +17,10 @@ public class Post {
     private Date posttime;
     private List<Comment> comments;
 
+    public Post(Integer id, String title, String body, Date posttime) {
+        this.id = id;
+        this.title = title;
+        this.body = body;
+        this.posttime = posttime;
+    }
 }
