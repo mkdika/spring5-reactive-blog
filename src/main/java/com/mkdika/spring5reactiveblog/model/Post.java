@@ -17,10 +17,18 @@ public class Post {
     private Date posttime;
     private List<Comment> comments;
 
-    public Post(Integer id, String title, String body, Date posttime) {
+    public Post() {
+    }
+
+    public Post(Integer id,
+                String title,
+                String body,
+                Date posttime,
+                List<Comment> comments) {
         this.id = id;
         this.title = title;
         this.body = body;
         this.posttime = posttime;
+        this.comments = comments;
     }
 }

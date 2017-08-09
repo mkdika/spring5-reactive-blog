@@ -16,6 +16,8 @@ public class Comment {
     private Date commenttime;
     private String body;
 
+    public Comment() {}
+
     public Comment(Integer id, String email, Date commenttime, String body) {
         this.id = id;
         this.email = email;

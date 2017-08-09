@@ -13,4 +13,9 @@ public class Spring5reactiveblogApplicationTests {
 	public void contextLoads() {
 	}
 
+	@Test
+	public void spring5reactiveblogTest() {
+		final String[] args = {};
+		Spring5reactiveblogApplication.main(args);
+	}
 }

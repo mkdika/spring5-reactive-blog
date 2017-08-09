@@ -1,15 +1,14 @@
 package com.mkdika.spring5reactiveblog.web.handlers;
 
+import com.mkdika.spring5reactiveblog.Spring5reactiveblogApplication;
 import com.mkdika.spring5reactiveblog.model.Post;
 import com.mkdika.spring5reactiveblog.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
-import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import java.util.function.BiFunction;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.web.reactive.function.BodyInserters.fromObject;
 
@@ -18,6 +17,11 @@ public class PostHandler {
 
     @Autowired
     private PostRepository repository;
+
+    public Mono<ServerResponse> initData(ServerRequest request) {
+        Spring5reactiveblogApplication.populateData(repository);
+        return ServerResponse.ok().build(Mono.empty());
+    }
 
     public Mono<ServerResponse> getPosts(ServerRequest request) {
         Flux<Post> products = this.repository.findAll();
@@ -33,17 +37,21 @@ public class PostHandler {
                 .switchIfEmpty(notFound);
     }
 
-    public Mono<ServerResponse> savePost(ServerRequest request) {
+    public Mono<ServerResponse> saveUpdatePost(ServerRequest request) {
         Mono<Post> post = request.bodyToMono(Post.class);
-        return ServerResponse.ok().build((BiFunction<ServerWebExchange, ServerResponse.Context, Mono<Void>>) this.repository.saveAll(post));
+        return ServerResponse.ok()
+                .contentType(APPLICATION_JSON)
+                .body(repository.save(post.block()),Post.class);
     }
 
-    public Mono<ServerResponse> editPost(ServerRequest request) {
-        return null;
+    public Mono<ServerResponse> deleteById(ServerRequest request) {
+        Integer postId = Integer.valueOf(request.pathVariable("id"));
+        Mono<ServerResponse> notFound = ServerResponse.notFound().build();
+        return ServerResponse.ok().build(this.repository.deleteById(postId));
     }
 
-    public Mono<ServerResponse> deletePost(ServerRequest request) {
+    public Mono<ServerResponse> deleteAllPost(ServerRequest request) {
         Mono<Post> post = request.bodyToMono(Post.class);
-        return ServerResponse.ok().build((BiFunction<ServerWebExchange, ServerResponse.Context, Mono<Void>>) this.repository.deleteAll(post));
+        return ServerResponse.ok().build(this.repository.deleteAll());
     }
 }

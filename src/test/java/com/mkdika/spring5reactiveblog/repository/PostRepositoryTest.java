@@ -58,7 +58,7 @@ public class PostRepositoryTest {
     @Test
     public void t06Save() {
         Post post = new Post(1,"ZK Framework",
-                "Lorem Ipsum",new Date());
+                "Lorem Ipsum",new Date(),null);
         Comment comm = new Comment(1,"mkdika@gmail.com",new Date(),"Testing..");
         post.setComments(new ArrayList<>());
         post.getComments().add(comm);
