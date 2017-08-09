@@ -15,3 +15,5 @@
 ### References
 - [Spring 5 Functional Reactor Web Sample](https://github.com/subhrajyotimajumder/spring-reactive-web-sample)
 - [New In Spring 5: Functional Web Framework](https://dzone.com/articles/new-in-spring-5-functional-web-framework)
+- [Going reactive with Spring Data](https://spring.io/blog/2016/11/28/going-reactive-with-spring-data)
+- [Reactor 3 Reference Guide](http://projectreactor.io/docs/core/release/reference/docs/index.html)
