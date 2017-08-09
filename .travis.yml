@@ -2,18 +2,21 @@ language: java
 sudo: false
 jdk:
   - oraclejdk8
+services:
+    - mongodb
+sudo: required
 before_install:
  - chmod +x mvnw
 before_script:
   - pip install --user codecov
 after_success:
   - codecov
-spring:
-   data:
-      mongodb.host: localhost
-      mongodb.port: 27017
-      mongodb.uri: mongodb://localhost/test
-      mongo.repositories.enabled: true
+#spring:
+#   data:
+#      mongodb.host: localhost
+#      mongodb.port: 27017
+#      mongodb.uri: mongodb://localhost/test
+#      mongo.repositories.enabled: true
 branches:
   only:
   - master
@@ -21,3 +24,4 @@ cache:
   directories:
   - .autoconf
   - $HOME/.m2
+install: true
