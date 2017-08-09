@@ -3,14 +3,11 @@ package com.mkdika.spring5reactiveblog.repository;
 import com.mkdika.spring5reactiveblog.model.Comment;
 import com.mkdika.spring5reactiveblog.model.Post;
 import org.junit.FixMethodOrder;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
-import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import reactor.core.publisher.Mono;
 
@@ -19,7 +16,6 @@ import java.util.Date;
 
 import static org.junit.Assert.*;
 
-@Ignore
 @DataMongoTest
 @RunWith(SpringRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
