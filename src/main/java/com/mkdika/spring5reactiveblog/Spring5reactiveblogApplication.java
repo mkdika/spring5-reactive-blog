@@ -34,7 +34,7 @@ public class Spring5reactiveblogApplication {
             repository.save(new Post(3, "Spring Functional Web Framework",
                     "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
                     new Date())).block();
-            repository.save(new Post(5, "Reactive Programming",
+            repository.save(new Post(4, "Reactive Programming",
                     "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
                     new Date())).block();
         };
