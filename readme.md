@@ -9,7 +9,7 @@
 - [Spring Web Reactive Framework](http://docs.spring.io/spring-framework/docs/5.0.0.M1/spring-framework-reference/html/web-reactive.html)
 - [Spring Developer Tools](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html)
 - [Lombok (Reduce Boiler Plate Code)](https://projectlombok.org/)
-- [MongoDB NoSQL (Embeded)](https://www.mongodb.com/)
+- [MongoDB NoSQL](https://www.mongodb.com/)
 - [Spring Data MongoDB Reactive](https://spring.io/blog/2016/11/28/going-reactive-with-spring-data)
 - [Netty Web Server](https://netty.io/)
 - Unit Test:
@@ -19,8 +19,6 @@
 
 
 ### Localhost API Test
-[![View in the embedded Swagger UI](https://avatars0.githubusercontent.com/u/7658037?v=3&s=20) View in the embedded Swagger UI](http://localhost:8123/index.html)
-
 [![Run in Postman](https://lh4.googleusercontent.com/Dfqo9J42K7-xRvHW3GVpTU7YCa_zpy3kEDSIlKjpd2RAvVlNfZe5pn8Swaa4TgCWNTuOJOAfwWY=s20) Run in Postman](https://app.getpostman.com/run-collection/498aea143dc572212f17)
 
 
@@ -31,6 +29,7 @@
 ### References
 - [Spring 5 Functional Reactor Web Sample](https://github.com/subhrajyotimajumder/spring-reactive-web-sample)
 - [New In Spring 5: Functional Web Framework](https://dzone.com/articles/new-in-spring-5-functional-web-framework)
+- [Spring: your next Java microframework](http://blog.alexnesterov.com/post/spring-your-next-microframework/)
 - [Going reactive with Spring Data](https://spring.io/blog/2016/11/28/going-reactive-with-spring-data)
 - [Reactor 3 Reference Guide](http://projectreactor.io/docs/core/release/reference/docs/index.html)
 - [Robo3T (Free MongoDB GUI Editor)](https://robomongo.org/)
