@@ -4,6 +4,8 @@
 [![codecov](https://codecov.io/gh/mkdika/spring5-reactive-blog/branch/master/graph/badge.svg)](https://codecov.io/gh/mkdika/spring5-reactive-blog)
 [![codebeat badge](https://codebeat.co/badges/052aab0a-0328-445f-89c9-a0d2436d03a8)](https://codebeat.co/projects/github-com-mkdika-spring5-reactive-blog-master)
 
+Spring 5 Functional Web Microframework REST API, in Simple Blog Example.
+
 ### Framework & Libraries
 - [Java 8 (JDK 8u131)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Spring Boot 2.0.0](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/)
@@ -13,12 +15,10 @@
 - [MongoDB NoSQL](https://www.mongodb.com/)
 - [Spring Data MongoDB Reactive](https://spring.io/blog/2016/11/28/going-reactive-with-spring-data)
 - [Netty Non-Blocking Web Server](https://netty.io/)
-- [Vue.Js 2](https://vuejs.org/)
-- [Element UI](http://element.eleme.io/#/en-US)
 - [Maven3](https://maven.apache.org/)
 - [JUnit4](http://junit.org/junit4/)
-
-### Installation
+- [Vue.Js 2](https://vuejs.org/)
+- [Element UI](http://element.eleme.io/#/en-US)
 
 
 ### Localhost API Test

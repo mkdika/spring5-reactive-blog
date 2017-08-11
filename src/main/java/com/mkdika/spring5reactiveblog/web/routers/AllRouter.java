@@ -3,7 +3,6 @@ package com.mkdika.spring5reactiveblog.web.routers;
 import com.mkdika.spring5reactiveblog.web.handlers.PostHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
-import org.springframework.web.reactive.function.server.RequestPredicates;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
