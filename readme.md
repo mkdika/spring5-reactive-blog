@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/mkdika/spring5-reactive-blog/branch/master/graph/badge.svg)](https://codecov.io/gh/mkdika/spring5-reactive-blog)
 [![codebeat badge](https://codebeat.co/badges/052aab0a-0328-445f-89c9-a0d2436d03a8)](https://codebeat.co/projects/github-com-mkdika-spring5-reactive-blog-master)
 
-Spring 5 Functional Web Microframework REST API, in Simple Blog Example.
+Spring 5 Functional Web Microframework REST API & Vue Element UI, in Simple Blog Example.
 
 ### Framework & Libraries
 - [Java 8 (JDK 8u131)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -27,7 +27,21 @@ Spring 5 Functional Web Microframework REST API, in Simple Blog Example.
 
 ### Online Demo
 
+
 ### Screenshots
+
+
+### Web REST API
+HTTP Method | Path       | Description
+----------- | ---------- | -----------
+GET         | /post      | To get all blog post
+GET         | /post/{id} | To get blog post by id
+POST        | /post/init | To init all dummy data
+POST        | /post      | To save blog post
+PUT         | /post      | To edit blog post
+DELETE      | /post/{id} | To delete blog post by id
+DELETE      | /post      | To delete all the blog post
+
 
 ### References
 - [Spring 5 Functional Reactor Web Sample](https://github.com/subhrajyotimajumder/spring-reactive-web-sample)
